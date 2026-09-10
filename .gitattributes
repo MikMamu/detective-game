@@ -1,0 +1,5 @@
+# 统一换行符，避免 Windows 与其他系统来回转换产生无意义的改动
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

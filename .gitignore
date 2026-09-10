@@ -1,0 +1,17 @@
+# 本地密钥（绝不要提交）
+config.local.json
+.env
+.env.local
+
+# 生成物（可随时重新生成）
+cases/c_*.json
+pack-*.html
+
+# 依赖与系统文件
+node_modules/
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/

@@ -1,0 +1,4 @@
+{
+  "_说明": "把本文件复制为 config.local.json，填入你的 DeepSeek API Key 即可（config.local.json 已被 .gitignore 忽略，不会上传）",
+  "deepseek_api_key": "sk-在这里填入你的key"
+}

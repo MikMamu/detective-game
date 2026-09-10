@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>主机城 · 谁动了我的0和1？</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header id="top">
+    <div id="top-row">
+      <div>
+        <h1 id="case-title">载入中…</h1>
+        <div id="case-subtitle" class="sub"></div>
+      </div>
+      <div id="score-box">
+        <div class="score-item"><span class="score-num" id="feynman-points">0</span><span class="score-label">费曼点</span></div>
+        <div class="score-item"><span class="score-num" id="mastered-count">0/7</span><span class="score-label">已讲清</span></div>
+        <div class="score-item"><span class="score-num" id="clue-count">0/6</span><span class="score-label">私人线索</span></div>
+        <span id="mode-badge" class="badge"></span>
+      </div>
+    </div>
+    <p id="case-opening"></p>
+  </header>
+
+  <main>
+    <aside id="left">
+      <div id="identity-card"></div>
+      <h2>主机城居民</h2>
+      <div id="component-list"></div>
+      <div class="tip">点击居民开始问话。问对关键点，他才会说出秘密。</div>
+    </aside>
+
+    <section id="chat-panel">
+      <div id="chat-title">选择一位居民开始问话</div>
+      <div id="chat-messages"></div>
+      <div id="chat-input-row">
+        <button id="btn-present" title="把已获得的线索出示给对方">📎 出示线索</button>
+        <input id="chat-input" type="text" placeholder="问点什么…例如：凌晨2:50你在干什么？（回车发送）" autocomplete="off">
+        <button id="btn-send" class="primary">发送</button>
+      </div>
+    </section>
+
+    <aside id="right">
+      <div class="tabs">
+        <button class="tab active" data-tab="clues">线索板</button>
+        <button class="tab" data-tab="cards">知识卡</button>
+        <button class="tab" data-tab="progress">进度</button>
+      </div>
+      <div id="tab-clues" class="tab-body"></div>
+      <div id="tab-cards" class="tab-body hidden"></div>
+      <div id="tab-progress" class="tab-body hidden"></div>
+    </aside>
+  </main>
+
+  <footer id="action-bar">
+    <button id="btn-feynman" class="primary">🎓 费曼讲解 · 赚费曼点</button>
+    <button id="btn-timeline">🧩 还原时间线</button>
+    <button id="btn-vote">🗳️ 投票结案</button>
+    <button id="btn-review" disabled>📋 真相复盘</button>
+    <span class="hint" id="action-hint">费曼点兑换线索 · 还原时间线后才能结案</span>
+  </footer>
+
+  <div id="modal-backdrop" class="hidden">
+    <div id="modal">
+      <div id="modal-title"></div>
+      <div id="modal-body"></div>
+      <div id="modal-actions"><button id="modal-close">关闭</button></div>
+    </div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "detective-game",
+  "version": "1.0.0",
+  "private": true,
+  "description": "主机城 ·《谁动了我的0和1？》—— 面向中职计算机专业学生的计算机知识推理游戏（费曼学习法 + 独立 AI 角色 + 时间线还原）",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "serve": "node src/cli.js serve",
+    "pack": "node src/cli.js pack",
+    "grade": "node src/cli.js grade",
+    "setkey": "node src/cli.js setkey",
+    "check:web": "node tools/check-web.js",
+    "check:api": "node tools/check-api.js",
+    "publish": "node tools/publish.js"
+  }
+}
